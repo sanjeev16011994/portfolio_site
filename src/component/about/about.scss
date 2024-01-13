@@ -1,0 +1,40 @@
+.about-container {
+    color: white;
+    width: 100%;
+    border-top: 1px solid rgb(33, 31, 31);
+    margin: auto;
+
+    .about-wrapper {
+        width: 100%;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .about,.education{
+            padding: 20px;
+            background: rgba(255, 255, 255, .2);
+            border-radius: 16px;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            margin: 20px;
+            &:hover{
+                box-shadow: 0px 1px 2px white;
+                transition: .5s ease-in-out;
+            }
+        }
+
+
+    }
+    .heading{
+        text-align: center;
+        margin-top: 50px;
+    }
+}
+
+@media (min-width: 768px) {
+    .education,.about {
+        width: 45%;
+    }
+}
