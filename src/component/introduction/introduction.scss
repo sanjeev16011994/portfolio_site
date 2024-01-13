@@ -1,0 +1,84 @@
+.introduction-container {
+    position: relative;
+    top: 100px;
+    display: flex;
+
+    // height: 500px;
+    .profile-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        column-gap: 10px;
+        padding: 50px;
+
+        .profile-image {
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            border-right: 1px solid #322e2e;
+
+            img {
+                height: 300px;
+                width: 300px;
+                border-radius: 100%;
+                
+            }
+        }
+
+        .profile-info {
+            width: 100%;
+            color: #FFFFFF;
+            // padding: 10px;
+            display: flex;
+            justify-content: flex-start;
+
+            .heading {
+                margin-left: 40px;
+                .name {
+                    font-size: 40px;
+                    font-weight: 600;
+                    // color: lime;
+                    // border-bottom: 1px solid rgb(42, 38, 38);
+                }
+
+                .role {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .typewriter  {
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: .15em solid #FFFFFF; /* The typwriter cursor */
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: 
+          typing 3.5s steps(40, end),
+          blink-caret .75s step-end infinite;
+      }
+      
+      /* The typing effect */
+      @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+      }
+      
+      /* The typewriter cursor effect */
+      @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #FFFFFF; }
+      }
+
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    .profile-wrapper {
+        flex-direction: column;
+    }
+
+}
