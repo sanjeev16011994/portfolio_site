@@ -1,7 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import "./header.scss";
+import { getStorage, ref, getDownloadURL } from "firebase/storage";
 
 const Header = () => {
+  const [loading, setLoading] = useState(false);
+
+  const getResume = async () => {
+    setLoading(true);
+    const storage = getStorage();
+    getDownloadURL(ref(storage, "Resume.pdf"))
+      .then((url) => {
+        window.open(url, "_blank");
+      })
+      .catch((error) => {
+        alert("Something went wrong");
+      })
+      .finally(() => {
+        setLoading(false);
+      });
+  };
+
   return (
     <div className="header">
       <div className=" me-auto logo"></div>
@@ -18,7 +36,26 @@ const Header = () => {
         <a href="#contact">Contact</a>
       </div>
       <div className="navbar-items border-1 border-white cv-download  ">
-        <button className="btn btn-outline-light  " >Download CV</button>
+        <button className="btn btn-outline-light" onClick={getResume}>
+          {loading ? (
+            <div>
+              <span
+                className="spinner-grow spinner-grow-sm text-info "
+                role="status"
+              ></span>
+              <span
+                className="spinner-grow spinner-grow-sm text-warning ms-2"
+                role="status"
+              ></span>
+              <span
+                className="spinner-grow spinner-grow-sm text-danger  ms-2"
+                role="status"
+              ></span>
+            </div>
+          ) : (
+            <span>Download CV</span>
+          )}
+        </button>
       </div>
     </div>
   );
