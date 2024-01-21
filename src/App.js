@@ -8,6 +8,8 @@ import Skills from "./component/skills/Skills";
 import Footer from "./component/footer/Footer";
 import Contact from "./component/contact/Contact";
 import Social from "./component/social/Social";
+import Projects from "./component/projects/projects";
+import ScrollButton from "./common/scrollbutton";
 
 const App = () => {
   return (
@@ -17,24 +19,28 @@ const App = () => {
       </header>
       <main>
         <section id="home">
-          <Introduction></Introduction>
+          <Introduction />
         </section>
         <section id="skills">
-          <Skills></Skills>
+          <Skills />
         </section>
         <section id="about">
           <About></About>
         </section>
+        <section id="projects">
+          <Projects />
+        </section>
         <section id="contact">
-          <Contact></Contact>
+          <Contact />
         </section>
         <section>
-          <Social/>
+          <Social />
         </section>
       </main>
       <footer>
-        <Footer></Footer>
+        <Footer />
       </footer>
+      <ScrollButton/>
     </div>
   );
 };

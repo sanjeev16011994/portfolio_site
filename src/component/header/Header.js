@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./header.scss";
 import { getStorage, ref, getDownloadURL } from "firebase/storage";
 
 const Header = () => {
   const [loading, setLoading] = useState(false);
+  const [scrolledvalue, setScrolledValue] = useState(0);
 
   const getResume = async () => {
     setLoading(true);
@@ -20,8 +21,15 @@ const Header = () => {
       });
   };
 
+  const handleScroll = () => {
+    const scrolled = document.documentElement.scrollTop;
+    setScrolledValue(scrolled);
+  };
+
+  window.addEventListener("scroll", handleScroll);
+
   return (
-    <div className="header">
+    <div className={`header ${scrolledvalue && "change-header"}`}>
       <div className=" me-auto logo"></div>
       <div className="navbar-items">
         <a href="#home">Home</a>
@@ -31,6 +39,9 @@ const Header = () => {
       </div>
       <div className="navbar-items">
         <a href="#skills">Skills</a>
+      </div>
+      <div className="navbar-items">
+        <a href="#projects">Projects</a>
       </div>
       <div className="navbar-items">
         <a href="#contact">Contact</a>
