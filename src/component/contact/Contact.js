@@ -34,9 +34,7 @@ const Contact = () => {
           <div className="contact-heading">
             <h3>Address</h3>
             <address>
-              At-Govirle, Post-Balavali ,
-              Dist-Raigad, State-Maharashtra,
-              Pin-402107
+              At-New Panvel,State-Maharashtra,India
             </address>
           </div>
         </div>
