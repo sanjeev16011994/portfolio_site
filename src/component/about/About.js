@@ -20,8 +20,8 @@ const About = () => {
             information technology and services industry. Skilled in HTML,
             Bootstrap, Cascading Style Sheets (CSS), AngularJS, ReactJS ,NodeJS
             and MongoDB, Python. Strong engineering professional with a Master's
-            degree focused in Computer Science.
-            Like's to explore new technologies.
+            degree focused in Computer Science. Like's to explore new
+            technologies.
           </p>
         </div>
         <div className="education ">
@@ -47,21 +47,37 @@ const About = () => {
             <SlBriefcase className="me-2" />
             Experience
           </h3>
-          <p>Datamoulds Pvt. Ltd. 2021 - Present</p>
-          <p>
-            <ul>
-              <li>Working as full stack developer.</li>
-              <li>
-                Build single page application's using technologies like React,
-                Angular.
-              </li>
-              <li>Worked on backend technologies like Nodejs, Python.</li>
-              <li>Build mobile app using React Native.</li>
-              <li>
-                Deployed mobile apps on Google Play Store and Apples Store
-              </li>
-            </ul>
-          </p>
+          <div className="experience">
+            <div>
+              <p>Datamoulds Pvt. Ltd. 2021 - 2024</p>
+              <p>
+                <ul>
+                  <li>Working as full stack developer.</li>
+                  <li>
+                    Build single page application's using technologies like
+                    React, Angular.
+                  </li>
+                  <li>Worked on backend technologies like Nodejs, Python.</li>
+                  <li>Build mobile app using React Native.</li>
+                  <li>
+                    Deployed mobile apps on Google Play Store and Apples Store
+                  </li>
+                </ul>
+              </p>
+            </div>
+            <div>
+              <p>Intelegain technologies Pvt. Ltd. 2024 - Present</p>
+              <p>
+                <ul>
+                  <li>Working as react developer.</li>
+                  <li>
+                    Build single page application's using technologies like
+                    React
+                  </li>
+                </ul>
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -30,7 +30,7 @@ const Header = () => {
 
   return (
     <div className={`header ${scrolledvalue && "change-header"}`}>
-      <div className=" me-auto logo"></div>
+      <div className=" me-auto logo">Software Developer</div>
       <div className="navbar-items">
         <a href="#home">Home</a>
       </div>

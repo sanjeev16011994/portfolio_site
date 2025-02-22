@@ -2,6 +2,7 @@ import { v4 as uuidv4 } from 'uuid';
 import listening from "../images/listening.png";
 import portfolio from "../images/portfolio.png";
 import exchange from "../images/exchange.png";
+import space from "../images/space.png";
 
 export const MY_PORJECTS = [
   {
@@ -24,5 +25,12 @@ export const MY_PORJECTS = [
     description:"Currency converter app created using html, css, and React,Material UI Firebase",
     url: "https://my-projects-95adb.web.app/",
     cover: exchange,
+  },
+  {
+    id: uuidv4(),
+    name: "Space Explorer",
+    description:"Space info app using nasa apis",
+    url: "https://spaceexplorer-a0b38.web.app/",
+    cover: space,
   }
 ];
