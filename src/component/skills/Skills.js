@@ -6,6 +6,7 @@ import js from "../../images/js.png";
 import nodejs from "../../images/node.png";
 import angular from "../../images/angular.png";
 import react from "../../images/react.png"
+import nextjs from "../../images/nextjs.png";
 
 const Skills = () => {
   return (
@@ -43,6 +44,11 @@ const Skills = () => {
           <div className="skill border-cyan">
             <div className="skill-img ">
               <img src={react} alt="reactjs" ></img>
+            </div>
+          </div>
+          <div className="skill border-cyan">
+            <div className="skill-img ">
+              <img src={nextjs} alt="nextjs" ></img>
             </div>
           </div>
         </div>

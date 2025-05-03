@@ -1,36 +1,45 @@
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from "uuid";
 import listening from "../images/listening.png";
 import portfolio from "../images/portfolio.png";
 import exchange from "../images/exchange.png";
 import space from "../images/space.png";
+import que from "../images/programming-course.png";
 
 export const MY_PORJECTS = [
   {
     id: uuidv4(),
     name: "Music App",
-    description:"Simple music playing app created using html, css, and React",
+    description: "Simple music playing app created using html, css, and React",
     url: "https://music-player-4710c.web.app/",
     cover: listening,
   },
   {
     id: uuidv4(),
     name: "Portfolio App",
-    description:"Portfolio app created using html, css, and React, Firebase",
+    description: "Portfolio app created using html, css, and React, Firebase",
     url: "https://myportfolio-70d50.web.app",
     cover: portfolio,
   },
   {
     id: uuidv4(),
     name: "Currency Converter",
-    description:"Currency converter app created using html, css, and React,Material UI Firebase",
+    description:
+      "Currency converter app created using html, css, and React,Material UI Firebase",
     url: "https://my-projects-95adb.web.app/",
     cover: exchange,
   },
   {
     id: uuidv4(),
     name: "Space Explorer",
-    description:"Space info app using nasa apis",
+    description: "Space info app using nasa apis",
     url: "https://spaceexplorer-a0b38.web.app/",
     cover: space,
-  }
+  },
+  {
+    id: uuidv4(),
+    name: "Programming Questions",
+    description: "Find programming questions for interview preparation at one place",
+    url: "https://todoapp-5372d.web.app",
+    cover: que,
+  },
 ];

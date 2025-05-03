@@ -52,7 +52,7 @@ const About = () => {
               <p>Datamoulds Pvt. Ltd. 2021 - 2024</p>
               <p>
                 <ul>
-                  <li>Working as full stack developer.</li>
+                  <li>Worked as full stack developer.</li>
                   <li>
                     Build single page application's using technologies like
                     React, Angular.

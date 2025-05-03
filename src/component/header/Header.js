@@ -9,7 +9,7 @@ const Header = () => {
   const getResume = async () => {
     setLoading(true);
     const storage = getStorage();
-    getDownloadURL(ref(storage, "Resume.pdf"))
+    getDownloadURL(ref(storage, "Resume_Sanjeev_Thakur.pdf"))
       .then((url) => {
         window.open(url, "_blank");
       })
@@ -30,7 +30,7 @@ const Header = () => {
 
   return (
     <div className={`header ${scrolledvalue && "change-header"}`}>
-      <div className=" me-auto logo">Software Developer</div>
+      <div className=" me-auto logo"></div>
       <div className="navbar-items">
         <a href="#home">Home</a>
       </div>
